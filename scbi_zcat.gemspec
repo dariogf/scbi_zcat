@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ScbiZcat::VERSION
   spec.authors       = ["dariogf"]
   spec.email         = ["dariogf@gmail.com"]
-  spec.summary       = %q{Read files from a zcat pipe of a gz.}
-  spec.description   = %q{Read files from a zcat pipe of a gz.}
+  spec.summary       = %q{Read files with readline from a zcat pipe of a gz file}
+  spec.description   = %q{Read files from a zcat pipe of a gz file. Useful to read multiple gz streams that are stored on the same file}
   spec.homepage      = ""
   spec.license       = "MIT"
 
