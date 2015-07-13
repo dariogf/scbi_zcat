@@ -25,14 +25,13 @@ class ScbiZcatFile
 		res = @file.readline
 		rescue IOError
 			close
-			@eof=true
 		end
 
 		return res
 	end
 
 	def eof?
-		@eof
+		@file.eof?
 	end
 
 	def eof
