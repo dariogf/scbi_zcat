@@ -2,7 +2,7 @@
 class ScbiZcatFile
 
 	def self.gz_file?(file_name)
-		res=`file "#{File.expand_path(file_name)}"`
+		res=`file -L "#{File.expand_path(file_name)}"`
 
 		return !res.index('gzip').nil?
 	end
